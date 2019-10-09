@@ -14,6 +14,7 @@ RUN set -ex \
       automake \
       build-base \
       c-ares-dev \
+      curl \
       libev-dev \
       libtool \
       libsodium-dev \
