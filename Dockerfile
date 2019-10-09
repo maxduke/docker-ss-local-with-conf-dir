@@ -24,6 +24,7 @@ RUN set -ex \
  # Download latest repo
  && curl -sSL $SS_URL | tar xz \
  && cd $SS_DIR \
+     && curl -sSL https://github.com/shadowsocks/libbloom/archive/master.tar.gz | tar xz --strip 1 -C libbloom \
      && curl -sSL https://github.com/shadowsocks/ipset/archive/shadowsocks.tar.gz | tar xz --strip 1 -C libipset \
      && curl -sSL https://github.com/shadowsocks/libcork/archive/shadowsocks.tar.gz | tar xz --strip 1 -C libcork \
  # Build & install
