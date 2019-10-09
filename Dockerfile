@@ -43,8 +43,6 @@ RUN set -ex \
  && rm -rf $SS_DIR \
  && chmod +x /entrypoint.sh
 
-USER nobody
-
 VOLUME ["/ss-local/conf"]
 
 ENTRYPOINT ["/entrypoint.sh"]

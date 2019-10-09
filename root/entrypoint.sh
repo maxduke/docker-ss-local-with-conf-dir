@@ -8,7 +8,7 @@ do
 	if test -f $file
 	then
 		echo $file
-		ss-local -c $file -f /var/run/$(basename $file).pid
+		nohup ss-local -c $file > /dev/null 2>&1 &
 	fi
 done
 
