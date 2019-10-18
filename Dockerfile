@@ -32,6 +32,7 @@ RUN set -ex \
       mbedtls-dev \
       pcre-dev \
       tar \
+      git \
  # Linux Header
  && curl -sSL ${LINUX_HEADERS_DOWNLOAD_URL} > /linux-headers-4.4.6-r2.apk \
  && apk add --virtual .build-deps-kernel /linux-headers-4.4.6-r2.apk \
