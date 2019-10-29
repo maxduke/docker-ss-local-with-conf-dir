@@ -28,7 +28,6 @@ RUN set -ex \
       libev-dev \
       libtool \
       libsodium-dev \
-      linux-headers \
       mbedtls-dev \
       pcre-dev \
       tar \
@@ -67,6 +66,8 @@ RUN set -ex \
       | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' \
       | sort -u) \
  && cd .. \
+ # Cleanup
+ && apk del .build-deps .build-deps-kernel \
  && rm -rf /linux-headers-4.4.6-r2.apk \
         shadowsocks-libev \
         simple-obfs \
