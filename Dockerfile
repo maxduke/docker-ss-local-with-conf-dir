@@ -4,7 +4,7 @@ MAINTAINER MaxDuke <maxduke@gmail.com>
 ARG TZ='Asia/Shanghai'
 
 ENV TZ ${TZ}
-ENV SS_LIBEV_VERSION v3.3.4
+ENV SS_LIBEV_VERSION v3.3.5
 ENV V2RAY_PLUGIN_VERSION v1.3.1
 ENV SS_DOWNLOAD_URL https://github.com/shadowsocks/shadowsocks-libev.git 
 ENV SS_DIR shadowsocks-libev-$SS_VER
